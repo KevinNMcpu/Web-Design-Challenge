@@ -36,23 +36,24 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Plots
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Temperature</a>
+                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="#">Cloudiness</a>
+                <a class="dropdown-item" href="#">Wind Speed</a>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Comparisons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+
           </ul>
         </div>
       </nav>
@@ -61,14 +62,11 @@
 
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading">Start Bootstrap </div>
           <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\temp.jpg" width="200" height="200"></img></a>
+            <a href="#" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\humid.jpg" width="200" height="200"></img></a>
+            <a href="#" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\cloud.jpg" width="200" height="200"></img></a>
+            <a href="#" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\wind.jpg" width="200" height="200"></img></a>
           </div>
         </div>
     
@@ -76,7 +74,7 @@
       <div class="container-fluid">
         <h1 class="mt-4">Weather Visualization - Latitudes</h1>
         <p>Welcome to my project's web page. The purpose of this project was to analyze and visualize the effect latitude has on four weather metrics- Temperature, Humidity, Cloudiness and Wind Speed  </p>
-        <p>I randomly picked 500 locations on the planet by selecting randomly generating longitude and latitude, then used the very helpful Python library <a href="https://github.com/wingchen/citipy">citiypy</a>. Some data wrangling was then used to weed out duplicates as needed. Weather data was pulled from <a href="https://openweathermap.org/">OpenWeather</a></p>
+        <p>I randomly picked 500 locations on the planet by selecting randomly generating longitude and latitude, then used the very helpful Python library <a href="https://github.com/wingchen/citipy">citiypy</a>. Some data wrangling was then used to weed out duplicates as needed. Weather data was pulled from <a href="https://openweathermap.org/">OpenWeather. <a href="https://matplotlib.org/">Matplotlib</a> was then used to do the visualizations in a <a href="https://jupyter.org/">Jupyter Notebook.</a></a></p>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
